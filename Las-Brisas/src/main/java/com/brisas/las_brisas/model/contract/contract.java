@@ -1,6 +1,6 @@
 package com.brisas.las_brisas.model.contract;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import com.brisas.las_brisas.model.employee.employee;
 
@@ -21,13 +21,13 @@ public class contract {
     private int id;
 
     @Column(name = "fecha_inicio", nullable = false)
-    private LocalDate fechaInicio;
+    private LocalDateTime fechaInicio;
 
     @Column(name = "fecha_fin", nullable = false)
-    private LocalDate fechaFin;
+    private LocalDateTime fechaFin;
 
     @Column(name = "fecha_renovacion", nullable = false)
-    private LocalDate fechaRenovacion;
+    private LocalDateTime fechaRenovacion;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "type", nullable = false)
